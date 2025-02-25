@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CalculadoraActivity">
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:gravity="end"
+        android:inputType="none"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="16dp"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:rowCount="5">
+
+        <!-- Números y operadores -->
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="7" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="8" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="9" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="/" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="4" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="5" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="6" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="*" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="1" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="2" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="3" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="-" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="0" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="C" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="=" />
+
+        <Button
+            android:layout_height="100dp"
+            android:onClick="onButtonClick"
+            android:text="+" />
+    </GridLayout>
+
+
+</LinearLayout>
